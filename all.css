@@ -1,0 +1,76 @@
+/* 打字效果 */
+.writeword{
+  width: 9.7em;
+  border-right: .08em solid;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(20),
+    caret 1s steps(1) infinite;
+}
+@keyframes caret {
+  50% { border-color: transparent; }
+}
+@keyframes typing {
+  from { width: 0 }
+}
+/* 打字效果 */
+
+
+/* icon連結放大 */
+.icon1{
+  font-size: 2rem;
+}
+.icon1:hover{
+  transition:.3s;
+  font-size:2.2rem;
+}
+/* icon連結放大 */
+
+
+/* 列表左邊的線 */
+.resume_item{
+  padding: 0 0 5px 20px;
+    margin-top: -2px;
+    border-left: 5px solid rgb(255,255,255);
+    position: relative;
+}
+/* 列表左邊的線 */
+
+
+/* li不要點點 */
+.skill ul li{
+  position:relative;
+  left:-15px;
+  list-style: none;
+  font-weight:bold;
+}
+/* li不要點點 */
+
+/* 卡片border */
+.card1{
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  margin-left:-5px;
+}
+/* 卡片border */
+
+.card1{
+  position:relative;
+  height:350px;
+}
+.card1 ul{
+  position:relative;
+  top:115px;
+}
+.card1 i {
+  position:absolute;
+  top:10%;
+  left:35%;
+  font-size: 6rem;
+}
+
+.card1:hover i{
+  transition:.5s;
+  font-size: 6.5rem;
+}
