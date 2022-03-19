@@ -39,8 +39,8 @@
     </div>
   </nav>
 <!-- 導覽列 ------------------------------------------------------------------------------------>
-<div style="height: 60vh;background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(./images/IMG002.jpg) no-repeat 0% 38%/cover;">
-  <h1 class="writeword" style="position: absolute;top:30%;left:40%;color: white;" >Frontend Developer</h1>
+<div class="imgtop">
+  <h1 class="writeword">Frontend Developer</h1>
 </div>
 
 
@@ -50,18 +50,18 @@
 <div id="about" class="container mb-5 pt-5">
   <h1 class="text-center mt-3 display-5 fw-bold">關於</h1>
   <hr>
-  <div class="row d-flex mt-5">
-    <div class="col-lg-6">
-      <img class="img-fluid" style="height: 500px; margin-left: 100px;"  src="./images/IMG_003.jpg">
+  <div class="row d-flex mt-5 justify-center">
+    <div class="col-lg-6 d-flex justify-content-center">
+      <img class="img_about" src="./images/IMG_003.jpg">
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-6 mt-5 text_666">
       <h3>詹子霆 CHAN ZI-TING</h3>
       <p>在大學期間接觸過程式設計的課程，對這方面有了基礎的認識，大學畢業後，在工作期間思考未來職涯的規劃，嘗試自學程式語言，逐漸越來越有熱情，決定轉職前端工程師。</p>
       <p>因自學缺乏系統學習的基礎，於是決定參與為期半年的前端網頁開發技術訓練課程，熟悉HTML、CSS、JavaScript、jQuery及Vue.js，能使用Node.js及MongoDB建置後端資料庫，並使用Git版本控制佈署於Heroku，完成前後端網頁整合。</p>
       <p>因前端開發技術日新月異，期許未來能繼續精進前端相關技術，面對各種不同的問題都勇於面對解決，成為一位獨當一面的前端工程師。</p>
-      <div style="position: relative;">
-      <a href="https://github.com/eason830" style="color: black; position: absolute; top: 0px;left: 0px;" target="_blank" ><i class="bi bi-github icon1"></i></a>
-      <a href="mailto:orz0830@gmail.com" style="color: black; position: absolute; top: 0px;left: 50px;" target="_blank"><i class="bi bi-envelope-fill icon1"></i></a>
+      <div style="position: relative; height: 50px; width: 100%;" class="d-flex justify-content-center">
+      <a href="https://github.com/eason830" class="icon001" target="_blank" ><i class="bi bi-github icon1"></i></a>
+      <a href="mailto:orz0830@gmail.com" class="icon002" target="_blank"><i class="bi bi-envelope-fill icon1"></i></a>
     </div>
     </div>
   </div>
@@ -152,75 +152,131 @@
       <h1 class="text-center pt-3 display-5 fw-bold">作品集</h1>
       <hr>
       <div class="row">
-        <div class="row d-flex mb-5 card2 mt-5 pt-5 justify-content-evenly" style="height: 500px;">
+        <div class="row d-flex mb-5 card2 mt-5  justify-content-evenly" style="height: 600px;">
           <div class="black666">
-          <span class="badge p-3 fs-5"><a class="a666" href="https://github.com/eason830/resume" target="_blank">Go to Page</a></span>
+          <span class="badge p-3 fs-5"><a class="a666" href="https://eason830.github.io/Ramen_front/#/" target="_blank">Go to Page</a></span>
           </div>
           <div class="col-lg-5">
-              <img class="img-fluid h-100 w-100" style="z-index: -1;" src="./images/麵屋號.png">
+              <img class="img-fluid h-100 w-100" src="./images/麵屋號.png">
+          </div>
+          <div class="col-lg-5 pt-3" style="position: relative;">
+            <h3 class="fw-bold">麵屋號-拉麵網站</h3>
+            <h4 class="fw-bold mt-3">概念</h4>
+            <p class="h5">一家拉麵店，推廣拉麵，</p>
+            <p class="h5">讓喜愛吃拉麵的朋友多一份選擇，</p>
+            <p class="h5">在疫情期間也能網購拉麵，在家享受拉麵的滋味。</p>
+              <div class="mt-4 ms-5">
+                <span class="badge bg-secondary">HTML</span>
+                <span class="badge bg-secondary">SCSS</span>
+                <span class="badge bg-secondary">JavaScript</span>
+                <span class="badge bg-secondary">Vue.js</span>
+                <span class="badge bg-secondary">Node.js</span>
+                <br>
+                <span class="badge bg-secondary">Axios</span>
+                <span class="badge bg-secondary">MongoDB</span>
+                <span class="badge bg-secondary">Vuetify</span>
+                <span class="badge bg-secondary">Express.js</span>
+              </div>
           </div>
           <div class="col-lg-5">
-            <h3>麵屋號-拉麵網站</h3>
-            <p>可以網購拉麵的網站</p>
+            <h3 class="fw-bold mt-4">使用到的前端技術</h3>
+            <ul class="mt-3">
+              <li>Vue 前端框架搭配 Vuetify</li>
+              <li>Vuex 管理前端狀態</li>
+              <li>Axios 向後端伺服器請求資料</li>
+              <li>會員註冊與登入</li>
+              <li>商品上架與修改</li>
+            </ul>
           </div>
           <div class="col-lg-5">
-            <h3>使用到的前端技術</h3>
-            <p>Vuex 管理前端狀態</p>
-            <p>Axios 向後端伺服器請求資料</p>
-          </div>
-          <div class="col-lg-5">
-            <h3>使用到的後端技術</h3>
-            <p>Node.js 搭配 Express.js </p>
-            <p>MongoDB 作為後端資料庫，管理會員信息</p>
+            <h3 class="fw-bold mt-4">使用到的後端技術</h3>
+            <ul class="mt-3">
+              <li>Node.js 搭配 Express.js建立伺服器</li>
+              <li>MongoDB 作為後端資料庫，管理會員信息，商品信息</li>
+              <li>商品管理</li>
+              <li>訂單紀錄</li>
+            </ul>
           </div>
         </div>
-        <div class="col-lg-4 card2" style="width: 400px;">
+        <div class="col-lg-4 card2 text-center" style="width: 400px;">
           <div class="black666">
-            <span class="badge p-3 fs-5"><a class="a666" href="https://github.com/eason830/resume" target="_blank">Go to Page</a></span>
+            <span class="badge p-3 fs-5"><a class="a666" href="https://eason830.github.io/pomodoro_vue/#/list" target="_blank">Go to Page</a></span>
             </div>
           <img class="img-fluid" src="./images/番茄鐘.png" style="width: 350px;height: 223px;">
-          <h3>番茄鐘 Pomodoro</h3>
-          <p>參考他人設計稿，並以 Vue cli 開發番茄鐘網站，其中使用 Vue 組件間通信、PWA 技術、chart.js 套件。</p>
+          <h3 class="fw-bold mt-5">番茄鐘 Pomodoro</h3>
+          <p class="lh-lg">參考他人設計稿，並以 Vue cli 開發番茄鐘網站，其中使用 Vue 組件間通信、PWA 技術。</p>
+          <div class="bottom666">
+            <span class="badge bg-secondary">Pug</span>
+            <span class="badge bg-secondary">SCSS</span>
+            <span class="badge bg-secondary">Vue.js</span>
+            <span class="badge bg-secondary">Node.js</span>
+          </div>
         </div>
-        <div class="col-lg-4 card2" style="width: 400px;">
+        <div class="col-lg-4 card2 text-center" style="width: 400px;">
           <div class="black666">
-            <span class="badge p-3 fs-5"><a class="a666" href="https://github.com/eason830/resume" target="_blank">Go to Page</a></span>
+            <span class="badge p-3 fs-5"><a class="a666" href="https://eason830.github.io/Template-RWD/" target="_blank">Go to Page</a></span>
             </div>
           <img src="./images/rwd_template.png" class="img-fluid" style="width: 350px;height: 223px;">
-          <h3>GO 交友網站</h3>
-          <p>從 TemplateMonster 網站中，挑選樣板，在不使用 UI 框架(如: bootstrap 等)環境下，刻出相同版面，此外也運用許多 JavaScript 套件製作輪播圖、動畫......等。</p>
+          <h3  class="fw-bold mt-5">GO 交友網站</h3>
+          <p class="lh-lg">從 TemplateMonster 網站中，挑選樣板，在不使用 UI 框架(如: bootstrap 等)環境下，<br>刻出相同版面。</p>
+          <div class="bottom666">
+            <span class="badge bg-secondary">HTML</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-secondary">JavaScript</span>
+          </div>
         </div>
-        <div class="col-lg-4 card2" style="width: 400px;">
+        <div class="col-lg-4 card2 text-center" style="width: 400px;">
           <div class="black666">
-            <span class="badge p-3 fs-5"><a class="a666" href="https://github.com/eason830/resume" target="_blank">Go to Page</a></span>
+            <span class="badge p-3 fs-5"><a class="a666" href="https://github.com/eason830/LINE-ChatBot" target="_blank">Go to Page</a></span>
             </div>
           <img src="./images/line機器人.png" class="img-fluid" style="width: 350px;height: 223px;">
-          <h3>LineBot 小橘推旅館</h3>
-          <p>在 Node.js 環境下，搭配 Linebot 套件，製作 Line 機器人。隨時隨地想知道附近有什麼旅館，就找小橘推旅館。</p>
+          <h3  class="fw-bold mt-5">LineBot 小橘推旅館</h3>
+          <p class="lh-lg">在 Node.js 環境下，搭配 Linebot 套件，製作 Line 機器人。隨時隨地想知道附近有什麼旅館，就找小橘推旅館。</p>
+          <div class="bottom666">
+            <span class="badge bg-secondary">Linebot</span>
+            <span class="badge bg-secondary">Axios</span>
+            <span class="badge bg-secondary">Node.js</span>
+            <span class="badge bg-secondary">Express.js</span>
+          </div>
         </div>
-        <div class="col-lg-4 card2" style="width: 400px;">
+        <div class="col-lg-4 card2 text-center" style="width: 400px;">
           <div class="black666">
-            <span class="badge p-3 fs-5"><a class="a666" href="https://github.com/eason830/resume" target="_blank">Go to Page</a></span>
+            <span class="badge p-3 fs-5"><a class="a666" href="https://eason830.github.io/js-game-EAT/" target="_blank">Go to Page</a></span>
             </div>
           <img src="./images/js遊戲.png" class="img-fluid" style="width: 350px;height: 223px;">
-          <h3>進擊的巨人</h3>
-          <p>用 JavaScript 打造的小遊戲，操控巨人吃掉飛來的兵長。</p>
+          <h3  class="fw-bold mt-5">進擊的巨人</h3>
+          <p class="lh-lg">用 JavaScript 打造的小遊戲，<br>操控巨人吃掉飛來的兵長。</p>
+          <div class="bottom666">
+            <span class="badge bg-secondary">HTML</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-secondary">JavaScript</span>
+          </div>
         </div>
-        <div class="col-lg-4 card2" style="width: 400px;">
+        <div class="col-lg-4 card2 text-center" style="width: 400px;">
           <div class="black666">
-            <span class="badge p-3 fs-5"><a class="a666" href="https://github.com/eason830/resume" target="_blank">Go to Page</a></span>
+            <span class="badge p-3 fs-5"><a class="a666" href="https://eason830.github.io/jq-CardGame/" target="_blank">Go to Page</a></span>
             </div>
           <img src="./images/jq單字遊戲.png" class="img-fluid" style="width: 350px;height: 223px;">
-          <h3>單字記字首翻牌遊戲</h3>
-          <p>用 jQuery 打造的翻牌遊戲，先記下圖片，配對他英文字首的單字。</p>
+          <h3  class="fw-bold mt-5">單字記字首翻牌遊戲</h3>
+          <p class="lh-lg">用 jQuery 打造的翻牌遊戲，先記下圖片，<br>配對他英文字首的單字。</p>
+          <div class="bottom666">
+            <span class="badge bg-secondary">HTML</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-secondary">Jquery</span>
+          </div>
         </div>
-        <div class="col-lg-4 card2" style="width: 400px;">
+        <div class="col-lg-4 card2 text-center" style="width: 400px;">
           <div class="black666">
-            <span class="badge p-3 fs-5"><a class="a666" href="https://github.com/eason830/resume" target="_blank">Go to Page</a></span>
+            <span class="badge p-3 fs-5"><a class="a666" href="https://eason830.github.io/jq-game-shootgame/" target="_blank">Go to Page</a></span>
             </div>
           <img src="./images/jq射擊遊戲.png" class="img-fluid" style="width: 350px;height: 223px;">
-          <h3>魷魚遊戲</h3>
-          <p>用 jQuery 製作的小遊戲，操控娃娃射擊參賽者得分。</p>
+          <h3  class="fw-bold mt-5">魷魚遊戲</h3>
+          <p class="lh-lg">用 jQuery 製作的小遊戲，<br>操控娃娃射擊參賽者得分。</p>
+          <div class="bottom666">
+            <span class="badge bg-secondary">HTML</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-secondary">Jquery</span>
+          </div>
         </div>
       </div>
     </div>

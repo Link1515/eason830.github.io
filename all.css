@@ -1,11 +1,15 @@
-/* 打字效果 */
+/* 打字效果 --------------------------------------------------------------------------- */
 .writeword{
+  position: absolute;
+  top:50%;
+  left:20%;
+  transform: transform(-50%,-50%);
+  color: white;
   width: 9.7em;
   border-right: .08em solid;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 2s steps(20),
-    caret 1s steps(1) infinite;
+  animation: typing 2s steps(20),caret 1s steps(1) infinite;
 }
 @keyframes caret {
   50% { border-color: transparent; }
@@ -13,47 +17,88 @@
 @keyframes typing {
   from { width: 0 }
 }
-/* 打字效果 */
+/* 打字效果 ---------------------------------------------------------------------------*/
+
+/* 飛機圖片---------------------------------------------------------------------------- */
+.imgtop{
+  position: relative;
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(./images/IMG002.jpg) no-repeat 0% 38%/cover;
+}
+
+/* 飛機圖片---------------------------------------------------------------------------- */
+
+/* about */
+.img_about{
+  height:300px;
+  max-width: 100%;
+}
+
+.text_666{
+  text-align: center;
+}
+
+.icon001{
+  color: black;
+  position: absolute;
+  top: 50%;
+  left:55%;
+  transform:translate(-50%,-50%);
+}
+
+.icon002{
+  color: black;
+  position: absolute;
+  top: 50%;
+  left:40%;
+  transform: translate(-50%,-50%);
+}
 
 
-/* icon連結放大 */
+/* icon連結放大 ---------------------------------------------------------------------------*/
 .icon1{
+  color: black;
   font-size: 2rem;
 }
 .icon1:hover{
   transition:.3s;
   font-size:2.2rem;
 }
-/* icon連結放大 */
+/* icon連結放大 ---------------------------------------------------------------------------*/
+/* about */
 
 
-/* 列表左邊的線 */
+
+
+/* 列表左邊的線 ---------------------------------------------------------------------------*/
 .resume_item{
   padding: 0 0 5px 20px;
     margin-top: -2px;
     border-left: 5px solid rgb(255,255,255);
     position: relative;
 }
-/* 列表左邊的線 */
+/* 列表左邊的線 ---------------------------------------------------------------------------*/
 
 
-/* li不要點點 */
+/* li不要點點 ---------------------------------------------------------------------------*/
 .skill ul li{
   position:relative;
   left:-15px;
   list-style: none;
   font-weight:bold;
 }
-/* li不要點點 */
+/* li不要點點 ---------------------------------------------------------------------------*/
 
-/* 卡片border */
+
+/* skill的卡片---------------------------------------------------------------------------*/
 .card1{
+  max-width: 400px;
   border: 5px solid black;
   border-radius: 5px;
   padding: 20px;
   margin-left:-5px;
 }
-/* 卡片border */
 
 .card1{
   position:relative;
@@ -66,7 +111,8 @@
 .card1 i {
   position:absolute;
   top:10%;
-  left:35%;
+  left:50%;
+  transform: translateX(-50%);
   font-size: 6rem;
 }
 
@@ -75,6 +121,11 @@
   font-size: 6.5rem;
 }
 
+/* skill的卡片---------------------------------------------------------------------------*/
+
+
+
+/* 作品集卡片 ---------------------------------------------------------------------------*/
 .card2{
   background-color: white;
   color: black;
@@ -85,7 +136,10 @@
   margin: 10px;
   position: relative;
 }
+/* 作品集卡片 ---------------------------------------------------------------------------*/
 
+
+/* 卡片的modal hover效果 ---------------------------------------------------------------------------*/
 .black666{
   width: 100%;
   height: 100%;
@@ -142,4 +196,50 @@
   text-decoration: none;
   color: white;
 }
+/* 卡片的modal hover效果 ---------------------------------------------------------------------------*/
 
+/* badge 下方 -------------------------------------------------------- */
+.bottom666{
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+}
+/* badge 下方 -------------------------------------------------------- */
+
+/* RWD ------------------------------------------------------------------------------------ */
+@media (min-width:768px) {
+  .writeword{
+  left:27%;
+}
+.text_666{
+  text-align: left;
+}
+.icon001{
+  left:10px;
+  transform:translate(0%,0%);
+}
+.icon002{
+  left:60px;
+  transform: translate(0%,0%);
+}
+}
+@media (min-width:968px) {
+  .writeword{
+  left:30%;
+}
+  .imgtop{
+    height: 60vh;
+  }
+  .img_about{
+  height: 500px;
+  margin-left: 100px;
+}
+}
+@media (min-width:1200px) {
+  .writeword{
+  left:40%;
+}
+}
+/* RWD ------------------------------------------------------------------------------------ */
