@@ -103,25 +103,15 @@ p {
   margin-left: -5px;
 }
 
-.card1 {
-  position: relative;
-  height: 350px;
-}
-.card1 ul {
-  position: relative;
-  top: 115px;
-}
 .card1 i {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
+  display: inline-block;
   font-size: 6rem;
+  transform: scale(1);
+  transition: 0.5s;
 }
 
 .card1:hover i {
-  transition: 0.5s;
-  font-size: 6.5rem;
+  transform: scale(1.1);
 }
 
 /* skill的卡片---------------------------------------------------------------------------*/
